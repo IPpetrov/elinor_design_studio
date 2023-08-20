@@ -1,0 +1,14 @@
+[
+    {
+      "imageUrl": "imgs/chair_one.jpg",
+      "productName": "Vintage chair"
+    },
+    {
+        "imageUrl": "imgs/chair_two.jpg",
+        "productName": "Vintage chair"
+    },
+    {
+    "imageUrl": "imgs/chair_three.jpg",
+    "productName": "Vintage chair"
+    }
+]

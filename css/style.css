@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'Addington CF';
+    src: url('./fonts/AddingtonCF-RegularItalic.ttf');
+    src: local('Addington CF Regular Italic'), local('AddingtonCF-RegularItalic'),
+        url('./fonts/AddingtonCF-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/AddingtonCF-RegularItalic.woff2') format('woff2'),
+        url('../fonts/AddingtonCF-RegularItalic.woff') format('woff'),
+        url('./fonts/AddingtonCF-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+/* General  */
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display';
+    color: black;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 2.5rem;
+}
+
+h6 {
+    color: black;
+    letter-spacing: 0.225rem; 
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid black;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+button > h6:hover {
+    color: gray;
+}
+
+a > h6:hover, button > h6:hover {
+    border-bottom: 1px solid gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header & Navbar */
+
+.fa-facebook, .fa-instagram {
+    font-size: 1.2rem;
+}
+
+.mini-header {
+    top: 0;
+    z-index: 1;
+}
+
+.dark-logo {
+    max-width: 8.1875rem;
+    max-height: 7.375rem;
+}
+
+.nav-link, .dropdown-item {
+    font-weight: 500;
+    color: black;
+    letter-spacing: 0.2rem;
+}
+
+.nav-link {
+    width: fit-content;
+}
+
+.dropdown-item {
+    width: auto;
+    color: rgb(80, 80, 80);
+    letter-spacing: 0rem;
+}
+
+.nav-link:hover, a > h6:hover {
+    color: gray;
+}
+
+.nav-link:active {
+    color: black;
+}
+
+.nav {
+    --bs-nav-link-hover-color: gray;
+}
+
+.fa-chevron-down {
+    font-size: 0.6rem;
+    vertical-align: middle;
+}
+
+/* Hero  */
+
+.hero-image {
+    width: 100%;
+}
+
+.hero > h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: lighter;
+}
+
+.hero > p {
+    font-size: 1.1rem;
+}
+
+.signature {
+    height: 5rem;
+}
+
+/* Projects  */
+
+.card {
+    width: 36rem;
+    border: 0;
+    border-radius: 0;
+}
+
+.card-img-top {
+    border: 0;
+    border-radius: 0;
+}
+
+#portfolio {
+    margin-bottom: 5rem;
+}
+
+/* Fluid containers*/
+
+.container-fluid {
+    background-color: #F6F4F1;
+}
+
+.elegant, .redefining {
+    position: relative;
+    overflow: hidden;
+    height: 56rem;
+}
+
+.elegant:after {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    background-image: url('../imgs/elegant.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.fluid-title {
+    font-weight: 400;
+    font-size: 3.125rem;
+    color: black;
+}
+
+.fluid-body {
+    color: #000;
+    font-family: Barlow;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+    border: none;
+    letter-spacing: 0;
+}
+
+.fluid-button {
+    width: fit-content;
+}
+
+.redefining:before {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    background-image: url('../imgs/redefining_luxury.jpg');
+    background-position: center;
+    background-size: cover;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+/* Shop  */
+
+#shop {
+    margin-top: 5rem;
+}
+
+.shop-title {
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.chairs > .card-img-top {
+    border: 10px solid #F6F4F1;
+}
+
+.chairs > .card-img-top:hover {
+    cursor: pointer;
+}
+
+.chairs h4 {
+    font-weight: 500;
+}
+
+/* Blog & Articles  */
+
+#blog {
+    margin-top: 6rem;
+}
+
+
+
+.articles {
+    width: 37rem;
+    height: 50rem;
+}
+
+.article-info {
+    font-family: 'Addington CF', sans-serif;
+}
+
+.article-body > p {
+    font-size: large;
+}
+
+.article-photo {
+    height: 100%;
+    content: "";
+    background-image: url('../imgs/blog_post.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.fa-circle {
+    font-size: 0.5rem;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+}
+
+#blog {
+    margin-bottom: 6rem;
+}
+
+/* Enquires  */
+
+.enquires {
+    height: 30rem;
+}
+
+/* Footer  */
+
+footer {
+    margin-top: 5rem;
+}
+
+footer h5 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+}
+
+footer p, footer a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+footer li a:hover {
+    border-bottom: 1px solid gray;
+}
+
+footer i {
+    color: gray;
+}
+
+span {
+    padding-left: 0.5rem;
+    font-family: 'Barlow';
+    cursor: text;
+}
+
+.fa-envelope-o, .fa-phone {
+    vertical-align: middle;
+}
+
+.contacts a:hover {
+    border: none;
+}
+
+.socials li a:hover {
+    border: none;
+}
+
+#newsletter1 {
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 0.7rem 1rem;
+}
+
+.subscribe:hover {
+    color: gray;
+    border-bottom: 1px solid gray;
+
+}
+
+.subscribe {
+    border-radius: 0;
+    width: fit-content;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    padding: 0 0 0.2rem 0;
+}
+
+/* Media querries  */
+
+
+@media only screen and (max-width: 1199px) {
+    .nav-logo {
+        display: none;
+    }
+
+    .navGrid {
+        display: grid;
+        grid-column: 1fr 1fr 1fr;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-link {
+        width: fit-content;
+        padding-left: 0;
+    }
+
+    .navbar-toggler {
+        border: none;
+        outline: none;
+        box-shadow: none;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .details {
+        text-align: center;
+    }
+
+    .details > h6 {
+        font-size: 1rem;
+        
+    }
+
+
+}
